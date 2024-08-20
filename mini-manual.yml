@@ -1,0 +1,131 @@
+# -----------------------------------------------------------------------------
+# Asciidoctor PDF Theme for technical documentation and tutorials.
+# -----------------------------------------------------------------------------
+extends: default-with-font-fallbacks
+page:
+  layout: landscape
+  margin: [10mm, 15mm, 10mm, 15mm]
+  size: a5
+base:
+  font_color: #000000
+  font_family: Iowan Old Style
+  font_style: normal
+  font_size: 16
+  line_height_length: 17
+  line_height: $base_line_height_length / $base_font_size
+vertical_spacing: $base_line_height_length
+heading:
+  #font_color: #1d4e89
+  font_family: Futura
+  font_size: 17
+  font_style: bold
+  line_height: 1
+  margin_bottom: $vertical_spacing / 1.5
+  margin_top: $vertical_spacing / 1.2
+heading-h1:
+  text-align: center
+  text-transform: uppercase
+code:
+  font_color: #333333
+  font_family: Courier Prime Sans
+  font_style: normal
+  font_size: 10
+  background_color: #f6f6f6
+  border_color: #0f80aa
+  border_radius: 2
+codespan:
+  font_family: Courier Prime Sans
+  font_style: bold
+link:
+  font_color: #002FA7
+description_list:
+  description_indent: $base_font_size * 2.5
+list:
+  indent: $base_font_size * 2.5
+title_page:
+  text-transform: uppercase
+  font_family: Futura
+  font_color: #000000
+  # background_color: #1d4e89
+  align: center
+  #logo:
+  #  top: 10%
+  #  image: image:images/puzzle_stamp_white.svg[width=30%, align=center]
+  title:
+    top: 30%
+    font_size: $base_font_size * 4.25
+    font_family: Futura
+    font_style: bold
+    line_height: 0.9
+  subtitle:
+    font_size: $base_font_size * 2.00
+    line_height: 1
+  authors:
+    margin_top: $base_font_size * 29.25
+    font_size: $base_font_size * 1.5
+  revision:
+    margin_top: $base_font_size * 0.5
+table:
+  border_width: 0
+  cell:
+    padding: 3
+  head:
+    font_size: 10
+  body:
+    font_size: 9
+  foot:
+    font_size: 9
+conum:
+  font_family: M+ 1mn
+  font_color: #0f80aa
+  line_height: 4 / 3
+  glyphs: filled
+kbd:
+  background_color: #f5f5f5
+  border_color: #cccccc
+  border_offset: 2
+  border_radius: 2
+  border_width: 0.5
+  font_family: M+ 1mn
+  font_style: bold
+  separator: "\u202f+\u202f"
+
+## ----------------------------------------------------------------------------
+## Fonts
+## ----------------------------------------------------------------------------
+font:
+  catalog:
+    Futura:
+      normal: Futura_medium.ttf
+      bold: Futura_bold.ttf
+      italic: Futura_medium_italic.ttf
+      bold_italic: Futura_medium_italic.ttf
+    Iowan Old Style:
+      normal: iowan.ttf
+      bold: iowan-bold.ttf
+      italic: iowan-italic.ttf
+      bold_italic: iowan-bold-italic.ttf
+    Courier Prime Sans:
+      normal: Courier Prime Sans.ttf
+      bold: Courier Prime Sans Bold.ttf
+      italic: Courier Prime Sans Italic.ttf
+      bold_italic: Courier Prime Sans Bold Italic.ttf
+    Clear Sans:
+      normal: ClearSans-Regular.ttf
+      bold: ClearSans-Bold.ttf
+      italic: ClearSans-Italic.ttf
+      bold_italic: ClearSans-BoldItalic.ttf
+    Clear Sans Thin:
+      normal: ClearSans-Thin.ttf
+    Clear Sans Light:
+      normal: ClearSans-Light.ttf
+    Clear Sans Medium:
+      bold: ClearSans-Medium.ttf
+      bold_italic: ClearSans-MediumItalic.ttf
+    M+ 1mn:
+      normal: GEM_FONTS_DIR/mplus1mn-regular-subset.ttf
+      bold: GEM_FONTS_DIR/mplus1mn-bold-subset.ttf
+      italic: GEM_FONTS_DIR/mplus1mn-italic-subset.ttf
+      bold_italic: GEM_FONTS_DIR/mplus1mn-bold_italic-subset.ttf
+  fallbacks:
+    - M+ 1mn

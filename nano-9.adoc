@@ -1,0 +1,20 @@
+= Nano-9
+:doctype: book
+:author: Shane Celis <shane.celis@gmail.com>
+:revnumber: 0.0.1
+:revremark: First attempt
+:revdate: 2024-08-19
+:icons: font
+:stem:
+:toc: left
+
+== What is it?
+
+Nano-9 is a game development platform, inspired by the Pico-8 platform. Pico-8
+is a limited but comprehensive development environment covering the full gamut
+of game development. It offers a built-in text editor, sprite editor, map
+editor, sound effects editor, and music sequencer. But it is limited to a fixed
+16-color palette, 128x128 display, controllers with one directional-pad and two
+buttons.
+
+=== Heading
