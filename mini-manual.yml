@@ -15,16 +15,15 @@ base:
   line_height: $base_line_height_length / $base_font_size
 vertical_spacing: $base_line_height_length
 heading:
-  #font_color: #1d4e89
   font_family: Futura
-  font_size: 17
   font_style: bold
   line_height: 1
   margin_bottom: $vertical_spacing / 1.5
   margin_top: $vertical_spacing / 1.2
-heading-h1:
-  text-align: center
-  text-transform: uppercase
+  h2-text-align: center
+  h2-font_size: 26
+  h2-text-transform: uppercase
+  # h3-font_size: 17
 code:
   font_color: #333333
   font_family: Courier Prime Sans
@@ -94,12 +93,16 @@ kbd:
   font_family: M+ 1mn
   font_style: bold
   separator: "\u202f+\u202f"
-toc-title:
-  text-transform: uppercase
-  font-color: #2B4587
-toc-h2:
-  font_style: bold
-
+toc:
+  font-color: #000000
+  title:
+    text-transform: uppercase
+    font-color: #2B4587
+  h2:
+    font_style: bold
+  dot-leader:
+    font-style: bold
+    font-color: #000000
 ## ----------------------------------------------------------------------------
 ## Fonts
 ## ----------------------------------------------------------------------------

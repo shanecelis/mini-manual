@@ -11,6 +11,8 @@
 
 == What is it?
 
+NOTE: Please read this instruction booklet to ensure proper handling of your new game, and then save the booklet for future reference.
+
 Nano-9 is a game development platform, inspired by the Pico-8 platform. Pico-8
 is a limited but comprehensive development environment covering the full gamut
 of game development. It offers a built-in text editor, sprite editor, map
