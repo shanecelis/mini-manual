@@ -45,7 +45,6 @@ list:
 title_page:
   text-transform: uppercase
   font_family: Futura
-  font_color: #000000
   # background_color: #1d4e89
   align: center
   #logo:
@@ -53,6 +52,8 @@ title_page:
   #  image: image:images/puzzle_stamp_white.svg[width=30%, align=center]
   title:
     top: 30%
+    font_color: #000000
+    # font_size: 40pt
     font_size: $base_font_size * 4.25
     font_family: Futura
     font_style: bold
@@ -61,9 +62,13 @@ title_page:
     font_size: $base_font_size * 2.00
     line_height: 1
   authors:
-    margin_top: $base_font_size * 29.25
+    # margin_top: $base_font_size * 19.25
     font_size: $base_font_size * 1.5
+    # font_size: 33pt
+    font_family: Futura
+    font_style: bold
   revision:
+    display: none
     margin_top: $base_font_size * 0.5
 table:
   border_width: 0
@@ -89,6 +94,11 @@ kbd:
   font_family: M+ 1mn
   font_style: bold
   separator: "\u202f+\u202f"
+toc-title:
+  text-transform: uppercase
+  font-color: #2B4587
+toc-h2:
+  font_style: bold
 
 ## ----------------------------------------------------------------------------
 ## Fonts

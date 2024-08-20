@@ -1,12 +1,13 @@
 = Nano-9
 :doctype: book
-:author: Shane Celis <shane.celis@gmail.com>
+:author: Shane Celis
 :revnumber: 0.0.1
 :revremark: First attempt
 :revdate: 2024-08-19
 :icons: font
 :stem:
 :toc: left
+:toc-title: Contents
 
 == What is it?
 
