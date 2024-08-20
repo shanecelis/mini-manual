@@ -109,6 +109,10 @@ ulist:
       font-family: Iowan Old Style
 example:
     background-color: #FFEAAB
+    border-color: #E6E8FA
+    font-style: italic
+verse:
+    border-left-width: 5
 ## ----------------------------------------------------------------------------
 ## Fonts
 ## ----------------------------------------------------------------------------
