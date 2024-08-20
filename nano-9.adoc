@@ -8,6 +8,65 @@
 :stem:
 :toc: left
 :toc-title: Contents
+:source-highlighter: pygments
+:rouge-style: monokai
+:pygments-style: stata-dark
+
+== Objective
+
+Create a game. That’s it. You can use any resources you can find.
+
+=== What is a game?
+
+A game has an objective, a win condition, and a set of rules for what can and cannot be done.
+
+=== What is a toy?
+
+A toy is something that is fun to play with.
+
+A good game is fun to play and win.
+
+== Hello, Editor!
+
+
+Every intrepid game developer must say hello to code if they are to realize
+their dream. As is tradition, we will say hello. But first you must choose a
+text editor.
+
+
+
+[caption="Interlude 1."]
+.image:text-editor.png[]
+==========================
+
+An old man with a long beard presents his wares, text editors of all manner and
+glyphs. You tell him you are happy using your word processor. He laughs. “Those
+are no text editors, my friend. Come let me show you."
+
+* TextEdit or Notepad, these are rarefied editors. No cruft. No frills either and builtin.
+
+* JetBrains or Visual Studio, these behemoths are more than text editors. They slice, dice, compile and debug.
+
+* Emacs and vim, these are for the select few. Powerful and archaic. Cryptic and idiosyncratic.
+
+You look upon the choices and do not know what to choose. You ask, “Which is best?”
+
+The old man laughs. “The one which you know already is best.”
+
+==========================
+
+Choose a text editor before contributing to the next page.
+
+<<<
+## Hello, World!
+
+Congratulations. A text editor has been added to your inventory.
+
+Using your text edtior, write this code into the file `main.lua`.
+
+```lua
+text.default: print ("Hello, World!")
+```
 
 == What is it?
 
@@ -21,3 +80,5 @@ editor, sound effects editor, and music sequencer. But it is limited to a fixed
 buttons.
 
 === Heading
+
+<a href="https://www.freepik.com/search">Icon by Freepik</a>

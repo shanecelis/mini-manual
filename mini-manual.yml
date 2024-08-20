@@ -1,7 +1,7 @@
 # -----------------------------------------------------------------------------
 # Asciidoctor PDF Theme for technical documentation and tutorials.
 # -----------------------------------------------------------------------------
-extends: default-with-font-fallbacks
+extends: default
 page:
   layout: landscape
   margin: [10mm, 15mm, 10mm, 15mm]
@@ -103,6 +103,12 @@ toc:
   dot-leader:
     font-style: bold
     font-color: #000000
+ulist:
+  marker:
+    checked:
+      font-family: Iowan Old Style
+example:
+    background-color: #FFEAAB
 ## ----------------------------------------------------------------------------
 ## Fonts
 ## ----------------------------------------------------------------------------
@@ -135,10 +141,16 @@ font:
     Clear Sans Medium:
       bold: ClearSans-Medium.ttf
       bold_italic: ClearSans-MediumItalic.ttf
+    DroidSansFallback:
+      normal:         DroidSansFallback.ttf
+      italic:         DroidSansFallback.ttf
+      bold:           DroidSansFallback.ttf
+      bold_italic:    DroidSansFallback.ttf
     M+ 1mn:
       normal: GEM_FONTS_DIR/mplus1mn-regular-subset.ttf
       bold: GEM_FONTS_DIR/mplus1mn-bold-subset.ttf
       italic: GEM_FONTS_DIR/mplus1mn-italic-subset.ttf
       bold_italic: GEM_FONTS_DIR/mplus1mn-bold_italic-subset.ttf
   fallbacks:
+    - DroidSansFallback
     - M+ 1mn
