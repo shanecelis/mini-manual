@@ -13,6 +13,7 @@
 :rouge-style: monokai
 :pygments-style: stata-dark
 :source-language: lua
+:stem:
 
 == Objective
 
@@ -62,7 +63,9 @@ Choose a text editor before continuing to the next page.
 <<<
 ## Hello, World!
 
-Congratulations. A text editor has been added to your inventory. image:text-editor.png[]
+Congratulations. A text editor has been added to your inventory.
+
+* [x] text editor image:text-editor.png[]
 
 Using your text edtior, write this code into the file `main.lua`.
 
@@ -77,9 +80,13 @@ they moved through the computer. What did they look like? Ships, motorcycles?
 Were the circuits like freeways? I kept dreaming of a world I thought I'd never
 see. And then, one day I got in...`"
 
-image::coord3.svg[float=right,title="The Grid",pdfwidth=40%]
+image::red-pixel.svg[float=right,title="The Grid with one red pixel",pdfwidth=40%]
+"`But what about graphics?`" you ask.
 
-
+In order to plot the merest of pixels, you must recon with _The Grid_. Our grid
+represents 128 pixels by 128 pixels. The _x_-axis specifies the horizontal
+position. The _y_-axis specifies the vertical position. To plot a pixel
+write: `pset(16,32)`
 
 ## Accepting Outside Input
 

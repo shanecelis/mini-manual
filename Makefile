@@ -1,4 +1,6 @@
-ALL: nano-9.pdf coord3.pdf
+ALL: nano-9.pdf graphs
+
+.PHONY: graphs
 
 %.pdf: %.adoc mini-manual.yml Makefile
 	asciidoctor-pdf \
@@ -9,5 +11,5 @@ ALL: nano-9.pdf coord3.pdf
 	-a iconsdir=icons \
 	$< \
 
-coord3.pdf: coord3.tex
-	pdflatex $<
+graphs:
+	$(MAKE) -C graphs
