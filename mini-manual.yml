@@ -34,7 +34,7 @@ code:
   border_radius: 2
 codespan:
   font_family: Courier Prime Sans
-  font_style: bold
+  font_color: #0094DF
 link:
   font_color: #002FA7
 description_list:

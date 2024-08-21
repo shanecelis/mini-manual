@@ -5,12 +5,14 @@
 :revremark: First attempt
 :revdate: 2024-08-19
 :icons: font
+:icon-set: fas
 :stem:
 :toc: left
 :toc-title: Contents
 :source-highlighter: pygments
 :rouge-style: monokai
 :pygments-style: stata-dark
+:source-language: lua
 
 == Objective
 
@@ -25,6 +27,9 @@ A game has an objective, a win condition, and a set of rules for what can and ca
 A toy is something that is fun to play with.
 
 A good game is fun to play and win.
+
+* [ ] toy
+* [x] objective
 
 == Hello, Editor!
 
@@ -64,13 +69,32 @@ Congratulations. A text editor has been added to your inventory.
 
 Using your text edtior, write this code into the file `main.lua`.
 
-```lua
-text.default: print ("Hello, World!")
-```
+[source]
+text.default:print("Hello, World!")
+
+## Accepting Outside Input
+
+With what you have learned, you are now able to create screen savers, which are
+a pristine graphical expressions free from the corrosive influence of the
+outside world. We, however, yearn to do more and must solicit the user for
+input--but how?
+
+image::controller.svg[title="An ideal controller",float="right",align="center"]
+
+We imagine a controller with 6 buttons: a directional pad with four directions
+left, right, up, down and two buttons: primary and secondary. To access these
+buttons we query with the functions `btn()` and `btnp()`.
+
+[source]
+--
+left_held_down = btn(0)
+left_just_pressed = btnp(0)
+--
 
 == What is it?
 
-NOTE: Please read this instruction booklet to ensure proper handling of your new game, and then save the booklet for future reference.
+NOTE: Please read this instruction booklet to ensure proper handling of your new
+game, and then save the booklet for future reference.
 
 Nano-9 is a game development platform, inspired by the Pico-8 platform. Pico-8
 is a limited but comprehensive development environment covering the full gamut
