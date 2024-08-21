@@ -1,2 +1,4 @@
 #+title: Todo
-* [ ] Fix checkmark
+- [ ] Fix checkmark
+* Pay
+- [ ] Pay $1 to https://ulerinn.itch.io/free-old-man

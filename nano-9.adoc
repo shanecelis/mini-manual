@@ -39,12 +39,9 @@ their dream. As is tradition, we will say hello. But first you must choose a
 text editor.
 
 
-
 [caption="Interlude 1."]
-.image:text-editor.png[]
 ==========================
-
-An old man with a long beard presents his wares, text editors of all manner and
+image:old-man.png[Old man, 32, 32] An old man with a long beard presents his wares, text editors of all manner and
 glyphs. You tell him you are happy using your word processor. He laughs. “Those
 are no text editors, my friend. Come let me show you."
 
@@ -60,24 +57,35 @@ The old man laughs. “The one which you know already is best.”
 
 ==========================
 
-Choose a text editor before contributing to the next page.
+Choose a text editor before continuing to the next page.
 
 <<<
 ## Hello, World!
 
-Congratulations. A text editor has been added to your inventory.
+Congratulations. A text editor has been added to your inventory. image:text-editor.png[]
 
 Using your text edtior, write this code into the file `main.lua`.
 
 [source]
 text.default:print("Hello, World!")
 
+## The Grid
+
+[quote,Kevin Flynn,'https://www.youtube.com/watch?v=4-J4duzP8Ng[Tron Legacy]']
+"`The Grid. A digital frontier. I tried to picture clusters of information as
+they moved through the computer. What did they look like? Ships, motorcycles?
+Were the circuits like freeways? I kept dreaming of a world I thought I'd never
+see. And then, one day I got in...`"
+
+image::coord3.svg[float=right,title="The Grid",pdfwidth=40%]
+
+
+
 ## Accepting Outside Input
 
-With what you have learned, you are now able to create screen savers, which are
-a pristine graphical expressions free from the corrosive influence of the
-outside world. We, however, yearn to do more and must solicit the user for
-input--but how?
+With what you have learned, you are now able to create screen savers, a pristine
+graphical expression free from the corrosive influence of the outside world. We,
+however, yearn to do more and must solicit the user for input--but how?
 
 image::controller.svg[title="An ideal controller",float="right",align="center"]
 

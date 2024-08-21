@@ -1,4 +1,4 @@
-ALL: nano-9.pdf
+ALL: nano-9.pdf coord3.pdf
 
 %.pdf: %.adoc mini-manual.yml Makefile
 	asciidoctor-pdf \
@@ -8,4 +8,6 @@ ALL: nano-9.pdf
 	-a imagesdir=images \
 	-a iconsdir=icons \
 	$< \
-	#--trace
+
+coord3.pdf: coord3.tex
+	pdflatex $<

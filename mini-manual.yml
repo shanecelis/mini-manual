@@ -107,6 +107,13 @@ ulist:
   marker:
     checked:
       font-family: Iowan Old Style
+quote:
+    background-color: #F4BAD1
+    border-color: #F4136C
+    font_style: italic
+    cite:
+        font-color: #000000
+        font-size: 12
 example:
     background-color: #FFEAAB
     border-color: #E6E8FA
