@@ -1,7 +1,7 @@
-ALL: red-pixel.svg
+ALL: red-pixel.svg grid.svg
 
 %.pdf: %.tex
 	pdflatex $(basename $<)
 
 %.svg: %.pdf
-	pdf2svg $< $@ && mv $@ ../images
+	pdf2svg $< $@ && cp $@ ../images

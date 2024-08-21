@@ -80,13 +80,19 @@ they moved through the computer. What did they look like? Ships, motorcycles?
 Were the circuits like freeways? I kept dreaming of a world I thought I'd never
 see. And then, one day I got in...`"
 
-image::red-pixel.svg[float=right,title="The Grid with one red pixel",pdfwidth=40%]
-"`But what about graphics?`" you ask.
-
+image::grid.svg[float=right,title="The grid",pdfwidth=40%]
 In order to plot the merest of pixels, you must recon with _The Grid_. Our grid
 represents 128 pixels by 128 pixels. The _x_-axis specifies the horizontal
-position. The _y_-axis specifies the vertical position. To plot a pixel
-write: `pset(16,32)`
+position. The _y_-axis specifies the vertical position.
+
+## Hello, Pixel
+
+image::red-pixel.svg[float=right,title="A red pixel at position _(x,y) = (16, 32)_",pdfwidth=40%]
+
+To plot a pixel write: `pset(16,32)`
+
+[source]
+pset(16,32)
 
 ## Accepting Outside Input
 
