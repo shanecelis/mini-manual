@@ -1,3 +1,11 @@
+# # Requires
+# * pdflatex
+#
+# `brew install --cask mactex`
+# * pdf2svg
+#
+# `brew install pdf2svg`
+#
 ALL: red-pixel.svg grid.svg
 
 %.pdf: %.tex
