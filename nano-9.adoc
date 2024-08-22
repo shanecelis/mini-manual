@@ -9,59 +9,63 @@
 :stem:
 :toc: left
 :toc-title: Contents
+:toclevels: 1
 :source-highlighter: pygments
 :rouge-style: monokai
 :pygments-style: stata-dark
 :source-language: lua
 :stem:
 
-== Objective
+== The Objective
 
-Create a game. That’s it. You can use any resources you can find.
+Create a game. That’s it. Use any resources you can find.
 
 === What is a game?
 
-A game has an objective, a win condition, and a set of rules for what can and
+A game has an objective--a way to win--and a set of rules for what can and
 cannot be done.
 
 === What is a toy?
 
 A toy is something that is fun to play with.
 
-A good game is fun to play and win.
+=== _toy + objective = game_
 
-* [ ] toy
-* [x] objective
+A good game is fun to play and win.
 
 == Hello, Editor!
 
-
-Every intrepid game developer must say hello to code if they are to realize
-their dream. As is tradition, we will say hello. But first you must choose a
-text editor.
-
+Every intrepid game developer will confront code if they are to realize their
+dream. As is tradition, we will face it and say hello. But first you must choose
+your means of expression, you must choose a text editor.
 
 [caption="Interlude 1."]
 ==========================
 
 image:old-man.png[Old man, 32, 32] An old man with a long beard presents his
 wares, text editors of all manner. You tell him you are happy using your word
-processor. He laughs. “Those are no text editors, my friend. Come let me show
-you."
+processor. He laughs. "`Those are no text editors, my friend. Come let me show
+you.`"
 
 * TextEdit or Notepad, these are rarefied editors. No cruft. No frills either,
-  like a old house.
+  like a old house. "`One of them is probably in your house already.`"
 
-* JetBrains or Visual Studio, these behemoths are more than text editors. They
-  slice, dice, compile and debug, like a new city.
+* https://zed.dev[Zed] or https://code.visualstudio.com[VS Code], these are
+  sleek, modern editors; many niceties, like a new house.
 
-* Emacs and vim, these are for the select few. Powerful and archaic. Cryptic and
-  idiosyncratic, like old ruins.
+* https://www.jetbrains.com/idea/[IntelliJ] or
+  https://visualstudio.microsoft.com[Visual Studio], these behemoths are more
+  than text editors. They slice, dice, compile and debug, like a new city.
 
-You look upon the choices and do not know what to choose. You ask, “Which is
-best?”
 
-The old man laughs. “The one which you know already is best of course.”
+* https://www.gnu.org/software/emacs/[Emacs] and https://www.vim.org[vim], these
+  are for the select few. Powerful and archaic. Cryptic and idiosyncratic, like
+  old ruins.
+
+You look upon the choices and do not know what to choose. You ask, "`Which is
+best?`"
+
+The old man laughs. "`The one which you know already is best of course.`"
 ==========================
 
 Choose a text editor before continuing to the next page.
@@ -110,7 +114,7 @@ image::controller.svg[title="An ideal controller",float="right",align="center"]
 
 We imagine a controller with 6 buttons: a directional pad with four directions
 left, right, up, down and two buttons: primary and secondary. To access these
-buttons we query with the functions `btn()` and `btnp()`.
+buttons we use the functions `btn()` and `btnp()`.
 
 [source]
 --
@@ -124,7 +128,7 @@ NOTE: Please read this instruction booklet to ensure proper handling of your new
 game, and then save the booklet for future reference.
 
 Nano-9 is a game development platform, inspired by the Pico-8 platform. Pico-8
-is a limited but comprehensive development environment covering the full gamut
+is a limited but _comprehensive_ development environment covering the full gamut
 of game development. It offers a built-in text editor, sprite editor, map
 editor, sound effects editor, and music sequencer. But it is limited to a fixed
 16-color palette, 128x128 display, controllers with one directional-pad and two

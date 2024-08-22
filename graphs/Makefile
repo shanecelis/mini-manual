@@ -6,7 +6,7 @@
 #
 # `brew install pdf2svg`
 #
-ALL: red-pixel.svg grid.svg
+ALL: red-pixel.svg grid.svg image-grid.svg
 
 %.pdf: %.tex
 	pdflatex $(basename $<)

@@ -1,7 +1,7 @@
 # -----------------------------------------------------------------------------
 # Asciidoctor PDF Theme for technical documentation and tutorials.
 # -----------------------------------------------------------------------------
-extends: default
+extends: default-with-font-fallbacks
 page:
   layout: landscape
   margin: [10mm, 15mm, 10mm, 15mm]
@@ -20,9 +20,12 @@ heading:
   line_height: 1
   margin_bottom: $vertical_spacing / 1.5
   margin_top: $vertical_spacing / 1.2
-  h2-text-align: center
-  h2-font_size: 26
-  h2-text-transform: uppercase
+  h2:
+    text-transform: uppercase
+    text-align: center
+    font_size: 26
+  h3:
+    #text-transform: uppercase
   # h3-font_size: 17
 code:
   font_color: #333333
@@ -95,6 +98,7 @@ kbd:
   separator: "\u202f+\u202f"
 toc:
   font-color: #000000
+  font_family: Futura
   title:
     text-transform: uppercase
     font-color: #2B4587
@@ -125,11 +129,12 @@ verse:
 ## ----------------------------------------------------------------------------
 font:
   catalog:
+    merge: true
     Futura:
       normal: Futura_medium.ttf
       bold: Futura_bold.ttf
       italic: Futura_medium_italic.ttf
-      bold_italic: Futura_medium_italic.ttf
+      bold_italic: Futura_bold_italic.ttf
     Iowan Old Style:
       normal: iowan.ttf
       bold: iowan-bold.ttf
@@ -140,28 +145,28 @@ font:
       bold: Courier Prime Sans Bold.ttf
       italic: Courier Prime Sans Italic.ttf
       bold_italic: Courier Prime Sans Bold Italic.ttf
-    Clear Sans:
-      normal: ClearSans-Regular.ttf
-      bold: ClearSans-Bold.ttf
-      italic: ClearSans-Italic.ttf
-      bold_italic: ClearSans-BoldItalic.ttf
-    Clear Sans Thin:
-      normal: ClearSans-Thin.ttf
-    Clear Sans Light:
-      normal: ClearSans-Light.ttf
-    Clear Sans Medium:
-      bold: ClearSans-Medium.ttf
-      bold_italic: ClearSans-MediumItalic.ttf
-    DroidSansFallback:
-      normal:         DroidSansFallback.ttf
-      italic:         DroidSansFallback.ttf
-      bold:           DroidSansFallback.ttf
-      bold_italic:    DroidSansFallback.ttf
-    M+ 1mn:
-      normal: GEM_FONTS_DIR/mplus1mn-regular-subset.ttf
-      bold: GEM_FONTS_DIR/mplus1mn-bold-subset.ttf
-      italic: GEM_FONTS_DIR/mplus1mn-italic-subset.ttf
-      bold_italic: GEM_FONTS_DIR/mplus1mn-bold_italic-subset.ttf
-  fallbacks:
-    - DroidSansFallback
-    - M+ 1mn
+    # Clear Sans:
+    #   normal: ClearSans-Regular.ttf
+    #   bold: ClearSans-Bold.ttf
+    #   italic: ClearSans-Italic.ttf
+    #   bold_italic: ClearSans-BoldItalic.ttf
+    # Clear Sans Thin:
+    #   normal: ClearSans-Thin.ttf
+    # Clear Sans Light:
+    #   normal: ClearSans-Light.ttf
+    # Clear Sans Medium:
+    #   bold: ClearSans-Medium.ttf
+    #   bold_italic: ClearSans-MediumItalic.ttf
+    # DroidSansFallback:
+    #   normal:         DroidSansFallback.ttf
+    #   italic:         DroidSansFallback.ttf
+    #   bold:           DroidSansFallback.ttf
+    #   bold_italic:    DroidSansFallback.ttf
+    # M+ 1mn:
+    #   normal: GEM_FONTS_DIR/mplus1mn-regular-subset.ttf
+    #   bold: GEM_FONTS_DIR/mplus1mn-bold-subset.ttf
+    #   italic: GEM_FONTS_DIR/mplus1mn-italic-subset.ttf
+    #   bold_italic: GEM_FONTS_DIR/mplus1mn-bold_italic-subset.ttf
+  # fallbacks:
+  #   - DroidSansFallback
+  #   - M+ 1mn
