@@ -1,8 +1,8 @@
-ALL: nano-9.pdf graphs
+ALL: nano-9.pdf
 
 .PHONY: graphs
 
-%.pdf: %.adoc mini-manual.yml Makefile
+%.pdf: %.adoc mini-manual.yml Makefile graphs
 	asciidoctor-pdf \
 	-a pdf-themesdir=. \
 	-a pdf-theme=mini-manual.yml \

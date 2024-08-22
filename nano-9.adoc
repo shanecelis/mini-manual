@@ -21,7 +21,8 @@ Create a game. That’s it. You can use any resources you can find.
 
 === What is a game?
 
-A game has an objective, a win condition, and a set of rules for what can and cannot be done.
+A game has an objective, a win condition, and a set of rules for what can and
+cannot be done.
 
 === What is a toy?
 
@@ -42,20 +43,25 @@ text editor.
 
 [caption="Interlude 1."]
 ==========================
-image:old-man.png[Old man, 32, 32] An old man with a long beard presents his wares, text editors of all manner and
-glyphs. You tell him you are happy using your word processor. He laughs. “Those
-are no text editors, my friend. Come let me show you."
 
-* TextEdit or Notepad, these are rarefied editors. No cruft. No frills either and builtin.
+image:old-man.png[Old man, 32, 32] An old man with a long beard presents his
+wares, text editors of all manner. You tell him you are happy using your word
+processor. He laughs. “Those are no text editors, my friend. Come let me show
+you."
 
-* JetBrains or Visual Studio, these behemoths are more than text editors. They slice, dice, compile and debug.
+* TextEdit or Notepad, these are rarefied editors. No cruft. No frills either,
+  like a old house.
 
-* Emacs and vim, these are for the select few. Powerful and archaic. Cryptic and idiosyncratic.
+* JetBrains or Visual Studio, these behemoths are more than text editors. They
+  slice, dice, compile and debug, like a new city.
 
-You look upon the choices and do not know what to choose. You ask, “Which is best?”
+* Emacs and vim, these are for the select few. Powerful and archaic. Cryptic and
+  idiosyncratic, like old ruins.
 
-The old man laughs. “The one which you know already is best.”
+You look upon the choices and do not know what to choose. You ask, “Which is
+best?”
 
+The old man laughs. “The one which you know already is best of course.”
 ==========================
 
 Choose a text editor before continuing to the next page.
@@ -70,7 +76,7 @@ Congratulations. A text editor has been added to your inventory.
 Using your text edtior, write this code into the file `main.lua`.
 
 [source]
-text.default:print("Hello, World!")
+text:print("Hello, World!")
 
 ## The Grid
 

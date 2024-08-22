@@ -1,4 +1,7 @@
 .DS_Store
 *.pdf
-graphs/*.aux
-graphs/*.log
+/graphs/*.aux
+/graphs/*.log
+/graphs/*.svg
+/images/grid.svg
+/images/red-pixel.svg
