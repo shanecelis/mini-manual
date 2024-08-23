@@ -75,12 +75,19 @@ Choose a text editor before continuing to the next page.
 
 Congratulations. A text editor has been added to your inventory.
 
-* [x] text editor image:text-editor.png[]
-
-Using your text edtior, write this code into the file `main.lua`.
+Using your text edtior, write this code into the file `hello.lua`.
 
 [source]
 text:print("Hello, World!")
+
+Then exercise it using this command in the terminal:
+
+[source, sh]
+$ nano-9 hello.lua
+
+You should see a blank screen with the following text:
+
+image::hello-world.png[align=center]
 
 ## The Grid
 
@@ -90,19 +97,38 @@ they moved through the computer. What did they look like? Ships, motorcycles?
 Were the circuits like freeways? I kept dreaming of a world I thought I'd never
 see. And then, one day I got in...`"
 
-image::grid.svg[float=right,title="The grid",pdfwidth=40%]
-In order to plot the merest of pixels, you must recon with _The Grid_. Our grid
-represents 128 pixels by 128 pixels. The _x_-axis specifies the horizontal
-position. The _y_-axis specifies the vertical position.
+image::red-pixel.svg[float=right,title="A red pixel at position _(x,y) = (32, 64)_",pdfwidth=40%]
 
-## Hello, Pixel
+In order to plot the merest of pixels, you must recon with _The Grid_. The image
+grid represents 128 pixels by 128 pixels. The _x_-axis specifies the horizontal
+position. The _y_-axis specifies the vertical position. To plot a pixel at _x =
+32_ and _y = 64_, write: `background:set_pixel(32, 64)`
 
-image::red-pixel.svg[float=right,title="A red pixel at position _(x,y) = (16, 32)_",pdfwidth=40%]
+## Of Faeries, Sprites, and Pixies
 
-To plot a pixel write: `pset(16,32)`
+[quote, Gaiman & Chesterton]
+"`Fairy tales are more than true: not because they tell us that dragons exist,
+but because they tell us that dragons can be beaten.`"
+
+What you can do with pixels, you can do with sprites.
+
+### What are sprites?
+
+Sprites are often little people, both in folklore and video games. In video
+games they are images. Pick an image. Perhaps something from
+https://itch.io/search?type=games&q=1-bit+sprites+free[itch.io]. Load that
+image.
 
 [source]
-pset(16,32)
+--
+pixie = image:load("pixie.png")
+sprite = pixie:spr()
+--
+
+
+
+## The Loop
+
 
 ## Accepting Outside Input
 
