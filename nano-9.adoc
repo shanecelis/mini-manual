@@ -115,15 +115,30 @@ What you can do with pixels, you can do with sprites.
 ### What are sprites?
 
 Sprites are often little people, both in folklore and video games. In video
-games they are images. Pick an image. Perhaps something from
-https://itch.io/search?type=games&q=1-bit+sprites+free[itch.io]. Load that
+games they are found in images. Pick an
+https://itch.io/search?type=games&q=1-bit+sprites+free[image]. Load that
 image.
 
 [source]
---
 pixie = image:load("pixie.png")
-sprite = pixie:spr()
---
+
+Now capture a sprite!
+
+[source]
+pixie:spr()
+
+You should see your sprite like this but only for a moment:
+
+image::pixie-screenshot.png[align=center]
+
+They are skittish. You'll need to capture them to keep them from vanishing. Here is how:
+
+[source]
+jar = pixie:spr()
+
+
+
+
 
 
 
