@@ -2,6 +2,9 @@
 # Asciidoctor PDF Theme for technical documentation and tutorials.
 # -----------------------------------------------------------------------------
 extends: default-with-font-fallbacks
+cover:
+  front:
+    image: image:images/cover.svg[]
 page:
   layout: landscape
   margin: [10mm, 15mm, 10mm, 15mm]
